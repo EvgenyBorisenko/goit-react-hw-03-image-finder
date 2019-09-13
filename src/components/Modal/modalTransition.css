@@ -1,0 +1,42 @@
+.modal-enter {
+  opacity: 0;
+  transform: scale3d(0.3, 0.3, 0.3);
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  transition: all 500ms ease-in-out;
+}
+
+.modal-exit {
+  opacity: 1;
+}
+
+.modal-exit-active {
+  opacity: 0;
+  transform: scale3d(0.3, 0.3, 0.3);
+  transition: all 500ms ease-in-out;
+}
+
+.img-enter {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+  visibility: visible;
+}
+
+.img-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all 1000ms ease-in-out;
+}
+
+.img-exit {
+  opacity: 1;
+}
+
+.img-exit-active {
+  opacity: 0;
+  transform: scale3d(0.3, 0.3, 0.3);
+  transition: all 1000ms ease-in-out;
+}

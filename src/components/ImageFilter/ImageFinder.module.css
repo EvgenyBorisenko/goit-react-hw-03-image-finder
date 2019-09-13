@@ -1,3 +1,4 @@
+/* Базовые стили */
 html {
   box-sizing: border-box;
 }
@@ -29,13 +30,38 @@ img {
 }
 
 /* Стили компонента SearchForm */
+.searchForm {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.searchForm input {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border: #f0fff0;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font: inherit;
+  font-size: 16px;
+  border-radius: 2px;
+  outline: none;
+}
 
 /* Стили компонента Gallery */
-
+.gallery {
+  display: grid;
+  max-width: 1440px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+}
 
 /* Стили компонента GalleryItem */
-.photo-card {
+.photoCard {
   position: relative;
   overflow: hidden;
   border-radius: 2px;
@@ -43,7 +69,7 @@ img {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 
-.photo-card img {
+.photoCard img {
   height: 260px;
   object-fit: cover;
 }
@@ -58,7 +84,7 @@ img {
   padding: 4px;
 }
 
-.stats-item {
+.statsItem {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -67,7 +93,7 @@ img {
   flex-grow: 1;
 }
 
-.fullscreen-button {
+.fullscreenButton {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -87,17 +113,17 @@ img {
   opacity: 0;
 }
 
-.fullscreen-button:hover,
-.fullscreen-button:focus {
+.fullscreenButton:hover,
+.fullscreenButton:focus {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.fullscreen-button i {
+.fullscreenButton i {
   font-size: 36px;
 }
 
-.gallery-item:hover .fullscreen-button,
-.gallery-item:focus .fullscreen-button {
+.galleryItem:hover .fullscreenButton,
+.galleryItem:focus .fullscreenButton {
   opacity: 1;
 }
 

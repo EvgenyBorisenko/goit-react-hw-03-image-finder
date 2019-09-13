@@ -1,0 +1,21 @@
+/* MODAL */
+
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(102, 102, 102, 0.795);
+  z-index: 999;
+}
+
+.modal {
+  display: block;
+  width: 900px;
+  height: 600px;
+}
